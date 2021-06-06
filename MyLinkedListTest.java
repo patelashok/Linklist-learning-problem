@@ -49,6 +49,8 @@ public class MyLinkedListTest {
         myLinkedLists.add(myFirstNode);
         myLinkedLists.append(myThirdNode);
         myLinkedLists.insert(myFirstNode,myThirdNode);
+        boolean result = myLinkedLists.head.equals(myFirstNode) && myLinkedLists.head.equals(mySecondNode) && myLinkedLists.tail.equals(myThirdNode);
+        Assert.assertTrue(result);
 
     }
 }
